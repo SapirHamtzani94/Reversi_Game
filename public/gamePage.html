@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="./reversi.css" rel="stylesheet" type="text/css">
+    <title>Title</title>
+</head>
+<body>
+<h1 class="header">Reversi Game</h1>
+<table id="game-board" align="center">
+    <div class="containerT">
+        <div id="label">
+            <label>Turns: </label> <span class="turns"></span>
+        </div>
+      <div id="time">
+        <time class="time"><span class ="min">00:</span><span class = "sec" >00</span></time>
+       </div>
+
+    </div>
+
+</table>
+<div class="containerS">
+    <div id="playerB">
+        <h3>Player Black</h3>
+        <div><label>Name: </label> <span class="name"></span></div>
+        <div><label>Score: </label><span class="score" ></span></div>
+        <div><label>2 Disk on board: </label><span class="twoScore" ></span></div>
+        <div><label>Average move: </label><span class="avgMov" ></span></div>
+        <div class="hidden"><label>Average All moves: </label><span class="avgMoves"></span></div>
+    </div>
+    <div id="playerW"> <h3>Player White</h3>
+        <div><label>Name: </label> <span class="name"></span></div>
+        <div><label>Score: </label><span class="score" ></span></div>
+        <div><label>2 Disk on board: </label><span class="twoScore" ></span></div>
+        <div><label>Average move: </label><span class="avgMov" ></span></div>
+        <div class="hidden"><label>Average All moves: </label><span class="avgMoves"></span></div>
+    </div>
+</div>
+
+
+<div class="containerB">
+<div class= "button">
+    <button id="resetButton" type="button">Start Again</button>
+</div>
+<div class= "button">
+    <button id="potential" type="button">Show Potential</button>
+</div>
+<div class= "button">
+    <button id="endGame" type="button">End Game</button>
+</div>
+</div>
+
+<script type="text/javascript" src="reversi.js"></script>
+<script>
+    window.onload=(()=>{
+        initGame();
+    });
+</script>
+</body>
+</html>

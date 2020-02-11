@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="./reversi.css" rel="stylesheet" type="text/css">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="main_div">
+    <h2 align="center">Welcome to Reversi Game</h2>
+    <h3 align="center">Please enetres your names:</h3>
+
+    <div class="containerF">
+        <label class="name-label">Name player black:<input class="name-input-black" type="text"/></label>
+        <label class="name-label">Name player white:<input class="name-input-white" type="text"/></label>
+    </div>
+    <div class="size-grid-container">
+        <h4 align="center">Choose the size of the grid: </h4>
+            <select class="size" align="center">
+                <option value="6">6X6</option>
+                <option value="8">8X8</option>
+                <option value="10">10X10</option>
+                <option value="12">12X12</option>
+                <option value="14">14X14</option>
+                <option value="16">16X16</option>
+            </select>
+    </div>
+    <div class= "button" align="center">
+        <button id="letsStart" type="button">Lets start!</button>
+    </div>
+</div>
+<script type="text/javascript" src="index.js"></script>
+<script>
+    window.onload=(()=>{
+        welcomeData();
+    });
+</script>
+</body>

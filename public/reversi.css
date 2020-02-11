@@ -1,0 +1,290 @@
+
+body {
+    background-image: url("background.jpg");
+    background-repeat:repeat-x;
+    filter: grayscale(16%);
+  background-size:cover;
+  background-attachment: fixed;
+
+}
+
+* {
+    box-sizing:border-box;
+}
+
+@media  screen and (max-height: 847px) and (max-width: 1200px)
+{
+    .containerT
+    {
+        font-size:75%;
+    }
+    .containerS
+    {font-size:80%;}
+
+    [class="header"]
+    {font-size:30px;}
+}
+
+.header{
+    visibility: visible;
+}
+
+.col0, .col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8 , .col9, .col10, .col11, .col12, .col13, .col14, .col15{
+    background-color:darkcyan;
+    border: 2px solid black;
+    margin: 2px;
+    padding: 2px;
+    cursor:default;
+}
+
+
+.row0, .row1, .row2, .row3, .row4, .row5, .row6, .row7, .row8, .row9, .row10,.row11,.row12,.row13,.row14,.row15{
+    width: 580px;
+    height: 60px;
+    margin-right: auto;
+}
+
+.containerS {
+    width:800px;
+    justify-content: center;
+    margin:0 auto;
+    display: flex;
+    align-items: center;
+    padding-bottom: 2%;
+    font-weight: bold;
+	padding-left: 5%;
+}
+
+
+#playerB {
+    font-family:cursive;
+    padding-right:130px;
+    font-size: 130%;
+
+}
+
+#game-board
+{
+    margin: auto;
+}
+
+
+#playerW{
+    font-family:cursive;
+    font-size: 130%;
+	
+}
+
+
+.containerT {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 26px;
+    margin:auto;
+}
+
+
+.containerB {
+    display: flex;
+    justify-content: center;
+    width: 450px;
+    margin:auto;
+
+}
+
+.containerF {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.name-label {
+    margin-left: 5px;
+    margin-right: 45px;
+    font-size: 22px;
+	font-weight: bold;
+}
+
+.name-label input {
+    margin: 20px;
+    font-family: cursive;
+	font-size: 14px;
+	font-weight: bold;
+	
+}
+
+.size-grid-container {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.size-grid-container h4 {
+    margin-right: 35px;
+	font-size: 25px;
+}
+
+#resetButton{
+    margin-right: 35px;
+}
+
+#endGame{
+    margin-left:35px; ;
+}
+
+button {
+    text-align: center;
+    width: 170px;
+    font-family:cursive;
+    font-weight: bold;
+    display: inline-block;
+    padding: 2px 8px;
+    font-size: 130%;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color:dimgrey;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 5px #999;
+    transition: 0.1s;
+
+}
+
+button:hover {background-color:darkcyan}
+
+button:active {
+    background-color:darkgray;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.mark {
+	font-size: 145%;
+    text-decoration: underline;
+    margin-bottom: 20px;
+
+}
+
+td span{
+    display: block;
+    width: 45px;
+    height: 45px;
+    margin: 2px;
+    border-radius: 45px;
+    padding: inherit;
+    font-size: x-large;
+    text-align: center;
+    line-height: 2;
+    font-family:cursive;
+}
+
+td span :hover{
+    cursor:default;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+}
+
+
+h1{
+    margin-top: auto;
+    font-family:cursive;
+    font-style:oblique;
+
+    text-align: center;
+    font-size: 50px
+}
+
+h4{
+    margin-right: 7px;
+    font-size: 19px;
+}
+
+.size {
+    font-family:cursive;
+}
+
+#main_div h2{
+    /*margin-top: auto;*/
+    font-family:cursive;
+    font-style:oblique;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 80px;
+    margin-top: 40px;
+}
+
+#main_div h3{
+    margin-top: auto;
+    font-family:cursive;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 80px;
+}
+
+
+#main_div {
+    font-family:cursive;
+}
+
+#time{
+    font-family:cursive;
+    padding-right:8px;
+    padding-left: 4px;
+    border-spacing: inherit;
+    font-size: 130%;
+    border: solid;
+    width: auto;
+    object-position: center;
+    position:static;
+
+}
+
+#label{
+    font-family:cursive;
+    width: auto;
+    padding-right:7px;;
+    padding-left: 4px;
+    font-size: 130%;
+    border: solid;
+
+}
+
+.show {
+    visibility: visible;
+    animation: fadeIn 1s;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
